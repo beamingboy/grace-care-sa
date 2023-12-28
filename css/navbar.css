@@ -1,0 +1,139 @@
+header{
+    position: fixed;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(57, 66, 54, 70%);
+    transition: 0.3s ease-in-out;
+    justify-content: center;
+    z-index: 100;
+}
+
+header.sticky{
+    background-color: rgba(14, 14, 14, 0.932);
+    position: fixed;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.87);
+    transition: 0.3s ease-in;
+}
+
+nav{
+    width: 1600px;
+    justify-content: center;
+    
+}
+nav ul{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav img {
+    max-height: 80px;
+}
+.company-name{
+    text-decoration: none;
+    padding-left: 15px;
+    color: var(--logo-color);
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav li {
+    height: 80px;
+    align-items: center;
+    display: flex;
+    
+}
+
+nav a {
+    text-decoration: none;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: rgb(240, 240, 240);
+}
+
+nav a:hover{
+    color: var(--logo-color)
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.nav-button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: var(--yellow);
+    color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover{
+    background: var(--button-hover);
+    color: white;
+}
+
+.side-bar{
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.212);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 -10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: 0.3s ease-in;
+}
+
+.side-bar li {
+    width: 100%;
+}
+
+.side-bar a {
+    width: 100%;
+    justify-content: center;
+}
+
+.side-bar li:first-child a{
+    justify-content: start;
+}
+
+
+.menu-button{
+    display: none;
+}
+
+@media(max-width: 950px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    header{
+        padding: 10px 10px;
+    }
+    nav a {
+        padding: 0 10px;
+    }
+}
+
+@media(max-width: 400px){
+    .side-bar{
+        width: 100%;
+    }
+}

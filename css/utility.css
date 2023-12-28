@@ -59,6 +59,11 @@ body{
     line-height: normal;
 }
 
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
 .wrapper{
     padding: 0 30px;
     margin-right: auto;
