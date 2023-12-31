@@ -29,6 +29,16 @@ body{
     color: var(--heading2);
 }
 
+.h-section2{
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+    
+
 .t-level0{
     color: #000;
     font-size: 16px;
@@ -72,6 +82,15 @@ body{
     height: 100%;
 }
 
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in;
+}
+
 @media(max-width: 1450px){
     .wrapper{
        width: 100%;
@@ -82,6 +101,10 @@ body{
 @media(max-width: 1000px){
     .h-section{
         font-size: 34px;
+    }
+
+    .h-section2{
+        font-size: 26px;
     }
     .t-level0{
         font-size: 14px;    
@@ -100,6 +123,9 @@ body{
 @media(max-width: 600px){
     .h-section{
         font-size: 28px;
+    }
+    .h-section2{
+        font-size: 18px;
     }
     .t-level0{
         font-size: 12px;    

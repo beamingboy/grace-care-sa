@@ -20,7 +20,7 @@ nav{
     justify-content: center;
     
 }
-nav ul{
+.main-ul{
     padding-top: 5px;
     padding-bottom: 5px;
     list-style: none;
@@ -28,6 +28,8 @@ nav ul{
     justify-content: flex-end;
     align-items: center;
 }
+
+
 nav img {
     max-height: 80px;
 }
@@ -43,7 +45,19 @@ nav li {
     height: 80px;
     align-items: center;
     display: flex;
-    
+}
+
+/* hidden menu */
+.hidden-ul{
+    position: fixed;
+    display: none;
+    list-style: none;
+}
+
+.hidden-li{
+    height: 10px;
+    align-items: center;
+    display: flex;
 }
 
 nav a {
@@ -53,11 +67,13 @@ nav a {
     display: flex;
     align-items: center;
     color: rgb(240, 240, 240);
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
+
+
 
 nav a:hover{
     color: var(--logo-color)
@@ -78,6 +94,7 @@ nav li:first-child{
     color: white;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     transition: all 0.3s ease;
+    font-weight: 600;
 }
 
 .nav-button:hover{
@@ -121,8 +138,14 @@ nav li:first-child{
     display: none;
 }
 
+@media(max-width: 1140px){
+    nav a {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+}
 
-@media(max-width: 1140){
+@media(max-width: 950px){
     .hideOnMobile{
         display: none;
     }
