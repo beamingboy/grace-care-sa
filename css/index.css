@@ -1,45 +1,54 @@
+/* Main Section */
+
 main{
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     height: 90vh;
     transition: 0.3s ease-in;
-    background:url(../images/index/hero-banner.jpg);
+    background:url(../images/index/hero-banner7.jpg);
+    background-size:100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 main h1{
-    color: #ffffff;
-    font-size: 60px;
+    color: #2B2B2B;
+    font-size: 48px;
     font-style: normal;
-    font-weight: 800;
-    line-height: 94.5px;
-    width: 1291px;
-    height: auto;
-    text-align: center;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 10px;
 }
 
 .hero-section{
-    padding-top: 200px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     height: 100%;
     transition: 0.3s ease-in;
 }
 
 .text-content{
-    width: 100%;
+    padding-left: 40px;
+    padding-top: 200px;
+    max-width: 628px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     top: 40px;
+    height: 100%;
 }
 
 .hero-text{
     padding-top: 10px;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 550;
-    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .hero-button{
@@ -49,7 +58,11 @@ main h1{
     width: 200px;  
 }
 .hero-button a{
-    font-size: 22px;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
     display: flex;
     justify-content: center;
     align-items: center;
