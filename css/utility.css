@@ -88,6 +88,10 @@ body{
     transition: 0.3s ease-in;
 }
 
+.link-text{
+    text-decoration: none;
+}
+
 @media(max-width: 1450px){
     .wrapper{
        width: 100%;
