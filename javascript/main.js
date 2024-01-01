@@ -13,6 +13,15 @@ $(window).scroll(function () {
     }
 });
 
+$(window).scroll(function () {
+    if ($(window).scrollTop()) {
+        $("header").addClass("sticky2");
+    }
+    else {
+        $("header").removeClass("sticky2");
+    }
+});
+
 
 // Nav-bar
 
