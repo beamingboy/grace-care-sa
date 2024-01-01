@@ -1,8 +1,8 @@
 header{
     position: fixed;
     width: 100%;
-    padding: 10px 20px;
-    background-color: rgba(57, 66, 54, 70%);
+    padding: 10px 20px 0px 20px;
+    background-color: rgba(57, 66, 54, 0.795);
     transition: 0.3s ease-in-out;
     justify-content: center;
     z-index: 100;
@@ -23,8 +23,6 @@ nav{
     
 }
 .main-ul{
-    padding-top: 5px;
-    padding-bottom: 5px;
     list-style: none;
     width: 100%;
     justify-content: flex-end;
@@ -34,6 +32,7 @@ nav{
 
 nav img {
     max-height: 80px;
+    padding-bottom: 10px;
 }
 .company-name{
     text-decoration: none;
@@ -46,8 +45,8 @@ nav img {
 
 nav li {
     height: 80px;
-    align-items: center;
     display: flex;
+    align-items: center;
 }
 
 .hideOnMobile{
@@ -60,12 +59,12 @@ nav li {
     list-style: none;
     width: 400px;
     position: absolute;
-    background: rgba(57, 66, 54, 70%);
+    background:  rgba(57, 66, 54, 0.795);
     z-index: 99;
     display: none;
 }
 
-.hidden-ul.sticky2{
+.sticky2{
     background: rgba(14, 14, 14, 0.932);
 }
 
@@ -73,10 +72,10 @@ nav li {
     display: block;
     height: 50px;
 }
-
 .dropdown:hover .hidden-ul{
     display: block;
-  }
+    /* margin-top: 8px; */
+}
 
 nav a {
     text-decoration: none;
