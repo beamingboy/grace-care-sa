@@ -83,8 +83,8 @@ body{
 }
 
 .section1{
-    margin-top: 50px;
-    margin-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
     transition: 0.3s ease-in;
 }
 

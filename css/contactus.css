@@ -1,0 +1,173 @@
+/* contact us form */
+
+.c-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    
+}
+.c-map{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    justify-self: center;
+    width: 100%;
+    padding: 10px;
+}
+.c-map a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease-in;
+}
+
+.h-p{
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.s-p{
+    color: #2c2c2c; 
+    font-size: 18px;
+    text-align: center;
+}
+.svg-color{
+    fill: var(--logo-color);
+}
+
+.c-map a:hover{
+    scale: 1.2;
+}
+
+.c-map a:hover .svg-color{
+    fill: rgba(94, 94, 94, 0.808);
+}
+.c-contact {
+    width: 90%;
+    margin: 10px auto;
+    background-color: #5a6955;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+.c-contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--logo-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(255, 247, 247);
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    background: rgba(95, 95, 95, 0.116);
+}
+
+textarea {
+    resize: vertical;
+    color: azure;
+}
+
+.btn_contact {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 160px;
+    height: 60px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    background: var(--yellow);
+    color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn_contact:hover{
+    background: var(--button-hover);
+}
+
+input{
+    color: azure;
+}
+
+@media(max-width: 1300px){
+    .svg-size{
+        width: 70px;
+        height: 70px;
+    }
+    .h-p{
+        font-size: 20px;
+    }
+    .s-p{
+        font-size: 14px;
+    }
+    
+}
+
+
+@media(max-width: 1000px){
+    .c-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    #contact-us{
+        margin-bottom: 30px;
+    }
+    .c-map{
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    
+}
+
+@media(max-width: 600px){
+    .c-map{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c-map a{
+        margin-bottom: 30px;
+    }
+
+    .c-contact h2 {
+        font-size: 18px;
+    }
+    label{
+        font-size: 12px;
+    }
+    input{
+        font-size: 11px;
+    }
+
+
+}

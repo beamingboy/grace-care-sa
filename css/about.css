@@ -1,0 +1,74 @@
+.about-us{
+    background-color: rgb(255, 255, 255);
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 60px; */
+}
+
+.ab-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
+
+
+.ab-logo img{
+    max-height: 200px;
+    
+}
+
+
+.our-story-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+
+
+    background: url("../images/about/our-story-bg.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+
+
+    margin-top: 90px;
+    width: 100%;
+    min-height: 70vh;
+    transition: 0.3s ease-in;
+}
+.main_img--container {
+    height: 100%;
+    width: 100%;
+}
+
+.catchy_image {
+    position: relative;
+    left: 64px;
+    top: 97px;
+    max-width: 600px;
+    height: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.catchy_image:hover {
+    transform: scale(1.03);
+}
+
+
+@media(max-width: 850px){
+    .ab-logo img{
+        max-height: 160px;
+    }
+}
+
+@media(max-width: 500px){
+    .ab-logo img{
+        /* max-height: 160px; */
+        max-width: 250px;
+    }
+}
