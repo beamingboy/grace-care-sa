@@ -37,6 +37,15 @@ body{
     line-height: normal;
     padding-bottom: 20px;
 }
+
+.h-section3{
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 20px;
+}
     
 
 .t-level0{
@@ -107,6 +116,10 @@ body{
     .h-section2{
         font-size: 26px;
     }
+
+    .h-section3{
+        font-size: 20px;
+    }
     .t-level0{
         font-size: 14px;    
     }
@@ -128,6 +141,10 @@ body{
     }
     .h-section2{
         font-size: 18px;
+    }
+
+    .h-section3{
+        font-size: 16px;
     }
     .t-level0{
         font-size: 12px;    

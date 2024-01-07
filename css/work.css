@@ -1,0 +1,17 @@
+.work-banner{
+    width: 100%;
+    height: 600px;
+    transition: 0.3s ease-in;
+    background:url(../images/work/work-banner.jpg);
+    background-size:100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+span{
+    color: rgb(92, 28, 28);
+}
