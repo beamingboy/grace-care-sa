@@ -68,6 +68,24 @@ footer{
     list-style: none;
 }
 
+.f-bottom{
+    font-size: 12px;
+    color: rgb(119, 119, 119);
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 20px;
+    list-style: none;
+}
+
+.space-between{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.space-between a {
+    padding-left: 10px;
+}
 @media(max-width: 800px){
     .footer-top ul {
         border-top: none;
@@ -100,6 +118,10 @@ footer{
     }
 
     .footer-bottom ul{
+        font-size: 10px;
+    }
+
+    .f-bottom{
         font-size: 10px;
     }
 }

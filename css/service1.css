@@ -30,3 +30,21 @@
     scale: 1.02;
 }
 
+@media(max-width: 800px){
+    .sp-image{
+        min-width: 250px;
+        height: 300px;
+    }
+}
+
+@media(max-width: 600px){
+    .sp-image{
+        width: 100%;
+        height: auto;
+    }
+
+    .sp-container{
+        flex-direction: column;
+    
+    }
+}

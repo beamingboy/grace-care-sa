@@ -72,9 +72,11 @@
 cards-tabs =  participant_tabs
 card-image = participant_tab_image
  */
+ 
 .cards-tabs {
+    /* position: relative; */
     margin: 30px 0px;
-    height: 200px;
+    height: auto;
     display: grid;
     grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr;
     align-items: center;
@@ -92,6 +94,7 @@ card-image = participant_tab_image
 }
 
 .card-tab {
+    /* position: absolute; */
     margin: 10px 0px;
     height: 100%;
     width: 100%;
