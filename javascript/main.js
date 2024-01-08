@@ -168,7 +168,7 @@ function SendMail() {
     return;
   }
 
-  // sendquote();
+  sendquote();
 }
 
 
@@ -179,7 +179,7 @@ function sendquote() {
     from_subject: document.getElementById("subject").value,
     message: document.getElementById("message").value
   }
-  emailjs.send("service_helb38i","template_rpvwdtx", params).then(function (res) {
+  emailjs.send("service_yf4jdyp","template_3dce7m3", params).then(function (res) {
     alert("success! " + res.status)
 })
 }
@@ -191,7 +191,7 @@ function sendquote() {
 function WorkForm() {
 
 
-  event.preventDefault();
+  // event.preventDefault();
   // Reset error messages
   document.getElementById("name-error").textContent = "";
   document.getElementById("email-error").textContent = "";
@@ -315,8 +315,9 @@ function isValidEmail(email) {
 }
 
 function sendwork(params) {
-  console.log(params)
-  // emailjs.send("service_helb38i", "template_rpvwdtx", params).then(function (res) {
-  //       alert("success! " + res.status)
-  //   })
+  // console.log(params)
+  emailjs.send("service_yf4jdyp","template_80wqer6", params).then(function (res) {
+        alert("success! " + res.status)
+    })
+
 }
