@@ -20,14 +20,13 @@ header.sticky{
 }
 
 
-.phone-nav
-
 nav{
     width: 1600px;
     justify-content: center;
     
 }
 .main-ul{
+    display: flex;
     list-style: none;
     width: 100%;
     justify-content: flex-end;
