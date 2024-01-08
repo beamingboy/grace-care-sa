@@ -57,9 +57,9 @@
                                 <svg height="40px" width="40px" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"
                                     fill="#000000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
+                                    <g stroke-width="0"></g>
+                                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g >
                                         <style type="text/css">
                                             .feather_een {
                                                 fill: #0B1719;
@@ -76,9 +76,9 @@
                                 <svg height="40px" width="40px" fill="#000000" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 173"
                                     enable-background="new 0 0 256 173" xml:space="preserve">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
+                                    <g stroke-width="0"></g>
+                                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g >
                                         <path
                                             d="M128.253,56.864c15.186,0,27.432-12.247,27.432-27.432S143.536,2,128.253,2 c-15.186,0-27.432,12.247-27.432,27.432C100.918,44.716,113.165,56.864,128.253,56.864z M64.571,136.32h-49.28 c-15.969,0-16.851-24.395,0.294-24.395H58.3l24.493-36.054c7.25-9.895,15.48-14.598,27.138-14.598h36.544 c11.659,0,19.888,4.311,27.138,14.598l24.591,36.054h43.01c17.243,0,16.165,24.395,0.588,24.395h-49.28 c-3.919,0-8.622-1.372-11.365-5.584l-18.811-26.844l-0.098,67.209H94.844l-0.098-67.209l-18.811,26.844 C73.192,134.85,68.49,136.32,64.571,136.32z">
                                         </path>
@@ -97,9 +97,9 @@
                             </p>
                             <p class="flex t-level1" style="align-items: center;">
                                 <svg height="40px" width="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
+                                    <g stroke-width="0"></g>
+                                    <g stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g >
                                         <path
                                             d="M16 1C17.6569 1 19 2.34315 19 4C19 4.55228 18.5523 5 18 5C17.4477 5 17 4.55228 17 4C17 3.44772 16.5523 3 16 3H4C3.44772 3 3 3.44772 3 4V20C3 20.5523 3.44772 21 4 21H16C16.5523 21 17 20.5523 17 20V19C17 18.4477 17.4477 18 18 18C18.5523 18 19 18.4477 19 19V20C19 21.6569 17.6569 23 16 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H16Z"
                                             fill="#0F0F0F"></path>
@@ -186,9 +186,9 @@
                         <svg class="svg-size" width="100px" height="100px" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64"
                             enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
+                            <g stroke-width="0"></g>
+                            <g stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g >
                                 <g>
                                     <path fill="#394240"
                                         d="M60,8H4c-2.211,0-4,1.789-4,4v40c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4V12C64,9.789,62.211,8,60,8z M56,16v0.266L32,34.934L8,16.266V16H56z M8,48V26.398l21.543,16.758C30.266,43.719,31.133,44,32,44s1.734-0.281,2.457-0.844 L56,26.398V48H8z">
@@ -224,7 +224,7 @@
 
                         
                         <label for="qualifications">Which qualifications do you have?</label>
-                        <select id="qualifications" required>
+                        <select id="qualifications">
                             <option value="cert3_individual_support">Certificate 3 in Individual Support</option>
                             <option value="cert3_disability">Certificate 3 in Disability</option>
                             <option value="other">Other (Please Specify Below)</option>
@@ -238,7 +238,7 @@
 
 
 
-                        <label for="ndis-screening">Do you have a current NDIS Worker Screening?</label>
+                        <label>Do you have a current NDIS Worker Screening?</label>
                         <div class="radio-group">
                             <input type="radio" id="ndis-screening-yes" name="ndis-screening" value="yes" required> 
                             <label for="ndis-screening-yes">Yes</label>
@@ -249,7 +249,7 @@
 
 
 
-                        <label for="orientation-module">Have you completed your NDIS workers' orientation module?</label>
+                        <label>Have you completed your NDIS workers' orientation module?</label>
                         <div class="radio-group">
                             <input type="radio" id="orientation-yes" name="orientation-module" value="yes" required>
                             <label for="orientation-yes">Yes</label>
@@ -261,7 +261,7 @@
 
 
 
-                        <label for="first-aid-certificate">Do you have a current First Aid Certificate? (not more than 3 years old)</label>
+                        <label>Do you have a current First Aid Certificate? (not more than 3 years old)</label>
                         <div class="radio-group">
                             <input type="radio" id="first-aid-yes" name="first-aid-certificate" value="yes" required>
                             <label for="first-aid-yes">Yes</label>
@@ -272,7 +272,7 @@
 
 
 
-                        <label for="manual-handling-certificate">Do you have a current Manual Handling Certificate? (not more than 3 years old)</label>
+                        <label>Do you have a current Manual Handling Certificate? (not more than 3 years old)</label>
                         <div class="radio-group">
                             <input type="radio" id="manual-handling-yes" name="manual-handling-certificate" value="yes" required>
                             <label for="manual-handling-yes">Yes</label>
@@ -285,7 +285,7 @@
 
 
 
-                        <label for="drivers-license">Do you have a current Driver's License?</label>
+                        <label>Do you have a current Driver's License?</label>
                         <div class="radio-group">
                             <input type="radio" id="drivers-license-yes" name="drivers-license" value="yes" required>
                             <label for="drivers-license-yes">Yes</label>
@@ -297,7 +297,7 @@
 
 
 
-                        <label for="second-ndis-screening">Do you have a current NDIS Worker Screening?</label>
+                        <label>Do you have a current NDIS Worker Screening?</label>
                         <div class="radio-group">
                             <input type="radio" id="second-ndis-screening-yes" name="second-ndis-screening" value="yes" required>
                             <label for="second-ndis-screening-yes">Yes</label>
