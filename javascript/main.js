@@ -134,12 +134,14 @@ function SendMail() {
   document.getElementById("name-error").textContent = "";
   document.getElementById("email-error").textContent = "";
   document.getElementById("subject-error").textContent = "";
+  document.getElementById("type-error").textContent = "";
   document.getElementById("message-error").textContent = "";
 
   // Get form input values
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const subject = document.getElementById("subject").value;
+  const type = document.getElementById("type-of-eq").value;
   const message = document.getElementById("message").value;
 
   // Validate Name
@@ -163,6 +165,12 @@ function SendMail() {
     return;
   }
 
+  // Validate Qualifications
+  if (type === "") {
+    document.getElementById("type-error").textContent = "Qualifications are required";
+    return;
+  }
+
   // Validate Message
   if (message.trim() === "") {
     document.getElementById("message-error").textContent = "Message is required";
@@ -178,6 +186,7 @@ function sendquote() {
     from_name: document.getElementById("name").value,
     from_email: document.getElementById("email").value,
     from_subject: document.getElementById("subject").value,
+    type_eq:document.getElementById("subject").value,
     message: document.getElementById("message").value
   }
   emailjs.send("service_yf4jdyp","template_3dce7m3", params).then(function (res) {
