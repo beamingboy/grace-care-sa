@@ -245,14 +245,14 @@ card-image = participant_tab_image
 
 .card2 {
     /* background-image:linear-gradient(#024411,rgba(0, 0, 0, 0.867)) , url(srcs/images/home/tips/card2.png); */
-    background-image: linear-gradient(#e1e1e1, rgba(227, 238, 162, 0.457)), url(../images/about/card2.png);
+    background-image: linear-gradient(#e1e1e1a2, rgba(227, 238, 162, 0.457)), url(../images/about/card2.png);
 
 
 }
 
 .card3 {
     /* background-image:linear-gradient(#024411,rgba(0, 0, 0, 0.517)) , url(srcs/images/home/tips/card3.png); */
-    background-image: linear-gradient(#e1e1e1, rgba(227, 238, 162, 0.457)), url(../images/about/card3.png);
+    background-image: linear-gradient(#e1e1e1a2, rgba(227, 238, 162, 0.457)), url(../images/about/card3.png);
 
 
 }
