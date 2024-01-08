@@ -15,7 +15,12 @@ header.sticky{
     transition: 0.3s ease-in;
 }
 
+.svg-size-nav{
+    height: 30px;
+}
 
+
+.phone-nav
 
 nav{
     width: 1600px;

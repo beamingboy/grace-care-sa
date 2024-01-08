@@ -804,9 +804,6 @@ main h1{
     font-size: 18px;
     text-align: center;
 }
-.svg-color{
-    fill: var(--logo-color);
-}
 
 .c-map a:hover{
     scale: 1.2;

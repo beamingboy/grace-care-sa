@@ -1,0 +1,13 @@
+li{
+    font-size: 14px;
+    list-style-type: disc; /* Set the list item marker style */
+    margin-bottom: 5px;
+}
+ul {
+    padding-left: 50px;
+    padding-bottom: 50px; /* Adjust the value as needed */
+}
+
+p{
+    padding-bottom: 10px;
+}
