@@ -11,6 +11,9 @@
     background-repeat: no-repeat;
 }
 
+#qualifications{
+    padding-bottom: 10px;
+}
 
 .c-container span{
     color: rgb(92, 28, 28);
