@@ -805,6 +805,10 @@ main h1{
     text-align: center;
 }
 
+.svg-color{
+    fill: var(--yellow);
+}
+
 .c-map a:hover{
     scale: 1.2;
 }
