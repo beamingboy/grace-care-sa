@@ -129,6 +129,7 @@ document.querySelector('.arrow-right').addEventListener('click', navigateRight);
 
 function SendMail() {
 
+  event.preventDefault();
   // Reset error messages
   document.getElementById("name-error").textContent = "";
   document.getElementById("email-error").textContent = "";
@@ -191,7 +192,7 @@ function sendquote() {
 function WorkForm() {
 
 
-  // event.preventDefault();
+  event.preventDefault();
   // Reset error messages
   document.getElementById("name-error").textContent = "";
   document.getElementById("email-error").textContent = "";
