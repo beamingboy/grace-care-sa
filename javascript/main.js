@@ -182,16 +182,25 @@ function SendMail() {
 
 
 function sendquote() {
+
+
   var params = {
     from_name: document.getElementById("name").value,
     from_email: document.getElementById("email").value,
     from_subject: document.getElementById("subject").value,
-    type_eq:document.getElementById("subject").value,
+    type_eq: document.getElementById("type-of-eq").value,
     message: document.getElementById("message").value
   }
-  emailjs.send("service_yf4jdyp","template_3dce7m3", params).then(function (res) {
-    alert("success! " + res.status)
-})
+  emailjs.send("service_yf4jdyp", "template_3dce7m3", params).then(function (res) {
+    alert("Success! Quiry Sent" + res.status)
+
+    // Reset form fields
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("type-of-eq").value = "";
+    document.getElementById("message").value = "";
+  })
 }
 
 
@@ -324,10 +333,32 @@ function isValidEmail(email) {
   return emailRegex.test(email);
 }
 
+function clearRadioButtons(radioGroupName) {
+  var radioButtons = document.querySelectorAll('input[type="radio"][name="' + radioGroupName + '"]');
+  radioButtons.forEach(function (radioButton) {
+    radioButton.checked = false;
+  });
+}
+
 function sendwork(params) {
+  
   // console.log(params)
-  emailjs.send("service_yf4jdyp","template_80wqer6", params).then(function (res) {
-        alert("success! " + res.status)
-    })
+  emailjs.send("service_yf4jdyp", "template_80wqer6", params).then(function (res) {
+    alert("Success! Query Sent " + res.status)
+
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("qualifications").value = "";
+        document.getElementById("other-qualifications").value = "";
+    
+     // Clear radio button selections
+        clearRadioButtons("ndis-screening");
+        clearRadioButtons("orientation-module");
+        clearRadioButtons("first-aid-certificate");
+        clearRadioButtons("manual-handling-certificate");
+        clearRadioButtons("drivers-license");
+        clearRadioButtons("second-ndis-screening");
+        document.getElementById("work-message").value = "";
+  })
 
 }
