@@ -133,6 +133,7 @@ function SendMail() {
   // Reset error messages
   document.getElementById("name-error").textContent = "";
   document.getElementById("email-error").textContent = "";
+  document.getElementById("mobile-error").textContent = "";
   document.getElementById("subject-error").textContent = "";
   document.getElementById("type-error").textContent = "";
   document.getElementById("message-error").textContent = "";
@@ -140,6 +141,7 @@ function SendMail() {
   // Get form input values
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
+  const mobile = document.getElementById("mobile").value;
   const subject = document.getElementById("subject").value;
   const type = document.getElementById("type-of-eq").value;
   const message = document.getElementById("message").value;
@@ -158,6 +160,18 @@ function SendMail() {
     document.getElementById("email-error").textContent = "Invalid email format";
     return;
   }
+
+   // Validate Mobile
+   if (mobile.trim() === "") {
+    document.getElementById("mobile-error").textContent = "Mobile is required";
+    return;
+  } else if (!isValidMobileNumber(email)) {
+    document.getElementById("mobile-error").textContent = "Invalid mobile format";
+    return;
+  }
+
+
+  
 
   // Validate Subject
   if (subject.trim() === "") {
@@ -187,6 +201,7 @@ function sendquote() {
   var params = {
     from_name: document.getElementById("name").value,
     from_email: document.getElementById("email").value,
+    from_mobile: document.getElementById("mobile").value,
     from_subject: document.getElementById("subject").value,
     type_eq: document.getElementById("type-of-eq").value,
     message: document.getElementById("message").value
@@ -197,6 +212,7 @@ function sendquote() {
     // Reset form fields
     document.getElementById("name").value = "";
     document.getElementById("email").value = "";
+    document.getElementById("mobile").value = "";
     document.getElementById("subject").value = "";
     document.getElementById("type-of-eq").value = "";
     document.getElementById("message").value = "";
@@ -214,6 +230,8 @@ function WorkForm() {
   // Reset error messages
   document.getElementById("name-error").textContent = "";
   document.getElementById("email-error").textContent = "";
+  document.getElementById("mobile-error").textContent = "";
+
   document.getElementById("qualifications-error").textContent = "";
   document.getElementById("other-qualifications-error").textContent = "";
   document.getElementById("ndis-screening-error").textContent = "";
@@ -227,6 +245,7 @@ function WorkForm() {
   // Get form input values
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
+  const mobile = document.getElementById("mobile").value;
   const qualifications = document.getElementById("qualifications").value;
   const otherQualifications = document.getElementById("other-qualifications").value;
   const ndisScreening = document.querySelector('input[name="ndis-screening"]:checked');
@@ -249,6 +268,15 @@ function WorkForm() {
     return;
   } else if (!isValidEmail(email)) {
     document.getElementById("email-error").textContent = "Invalid email format";
+    return;
+  }
+
+  // Validate Mobile
+  if (mobile.trim() === "") {
+    document.getElementById("mobile-error").textContent = "Mobile is required";
+    return;
+  } else if (!isValidMobileNumber(email)) {
+    document.getElementById("mobile-error").textContent = "Invalid mobile format";
     return;
   }
 
@@ -309,6 +337,7 @@ function WorkForm() {
   var params = {
     form_name: name,
     email: email,
+    from_mobile: mobile,
     qualifications: qualifications,
     other_qualifications: otherQualifications,
     ndis_screening: ndisScreening.value,
@@ -333,6 +362,14 @@ function isValidEmail(email) {
   return emailRegex.test(email);
 }
 
+function isValidMobileNumber(number) {
+  // Basic mobile number validation regex
+  // This regex accepts numbers in formats like:
+  // +1234567890, 1234567890, 123-456-7890, (123) 456-7890, and many more
+  const mobileNumberRegex = /^[+]?[(]?\d{1,4}[)]?[-\s./]?\d{1,5}[-\s./]?\d{1,6}$/;
+  return mobileNumberRegex.test(number);
+}
+
 function clearRadioButtons(radioGroupName) {
   var radioButtons = document.querySelectorAll('input[type="radio"][name="' + radioGroupName + '"]');
   radioButtons.forEach(function (radioButton) {
@@ -348,6 +385,7 @@ function sendwork(params) {
 
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";
+        document.getElementById("mobile").value = "";
         document.getElementById("qualifications").value = "";
         document.getElementById("other-qualifications").value = "";
     
